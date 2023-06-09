@@ -1,0 +1,23 @@
+{
+  "name": "whats-up-my-console",
+  "version": "1.0.0",
+  "description": "Chrome Extenstion",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc && cpy 'src/manifest.json' 'dist' && cpy 'src/assets/**/*' 'dist/assets'",
+    "start": "web-ext run --source-dir=dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.237",
+    "@types/vscode": "^1.79.0",
+    "cpy-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "chrome": "^0.1.0",
+    "typescript": "^5.1.3",
+    "vscode": "^1.1.37"
+  }
+}
